@@ -1,6 +1,0 @@
-RPI_softPwmCreate
-RPI_softPwmStop
-RPI_softPwmWrite
-RPI_softToneCreate
-RPI_softToneStop
-RPI_softToneWrite

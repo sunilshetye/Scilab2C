@@ -9,3 +9,14 @@ lib
 /jar
 JavaHelpSearch/
 
+/config.log
+/config.status
+/includes/machine.h
+/includes/stamp-h1
+/libtool
+.deps/
+.libs/
+Makefile
+*.la
+*.lo
+*.o

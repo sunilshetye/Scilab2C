@@ -1,6 +1,0 @@
-RPI_analogRead
-RPI_analogWrite
-RPI_gertboardAnalogRead
-RPI_gertboardAnalogSetup
-RPI_gertboardAnalogWrite
-RPI_gertboardSPISetup
