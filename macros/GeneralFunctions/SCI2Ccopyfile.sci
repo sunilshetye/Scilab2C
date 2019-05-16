@@ -43,7 +43,7 @@ elseif (CopyMode == 'overwrite')
    PrintStringInfo(' ', OutFileName, 'file', 'y'); // Cannot use scilab copyfile when the directory is empty!.
    copyfile(InFileName,OutFileName);
 else
-   SCI2Cerror('Unknown CopyMode: ""'+CopyMode+'""');
+   error(9999, 'Unknown CopyMode: ""'+CopyMode+'""');
 end
 
 endfunction

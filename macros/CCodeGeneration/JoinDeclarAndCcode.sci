@@ -100,7 +100,8 @@ while ((~meof(CPass1V1FileFid)) & (FoundCurlyBracket == 0))
 end
 
 if (FoundCurlyBracket == 0)
-   SCI2CerrorFile('""{"" char not found in:'+CPass1FileName,ReportFileName);
+   PrintStringInfo('""{"" char not found in:'+CPass1FileName,ReportFileName,'file','y');
+   error(9999, '""{"" char not found in:'+CPass1FileName);
 end
 
 PrintStringInfo('/*',CPass2FileName,'file','y');

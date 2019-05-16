@@ -127,7 +127,7 @@ end
 //          // #RNU_RES_E
 //          PrintStringInfo(C_IndentBlanks(IndentLevel)+CCall,CPass1FileName,'file','y');
 //       else
-//          SCI2Cerror('Don''t know how to manage size function with number of output args different from 1 and 2.');
+//          error(9999, 'Don''t know how to manage size function with number of output args different from 1 and 2.');
 //       end
 //    elseif (NInArg == 2)
 //       if (NOutArg == 1)
@@ -144,13 +144,13 @@ end
 //             // #RNU_RES_E
 //             PrintStringInfo(C_IndentBlanks(IndentLevel)+CCall,CPass1FileName,'file','y');
 //          else
-//             SCI2Cerror('Not known the value of the second input arg for the size function.');
+//             error(9999, 'Not known the value of the second input arg for the size function.');
 //          end
 //       else
-//          SCI2Cerror('Don''t know how to manage size function with number of output args different from 1.');
+//          error(9999, 'Don''t know how to manage size function with number of output args different from 1.');
 //       end
 //    else
-//       SCI2Cerror('Don''t know how to manage size function with number of input args different from 1 and 2.');
+//       error(9999, 'Don''t know how to manage size function with number of input args different from 1 and 2.');
 //    end
 //    return;
 // end

@@ -61,7 +61,8 @@ if ((SharedInfo.WhileExpr.OnExec > 0) & (NOutArg==1))
       //RNU: secondo me la matrice finale non e' supportata dalla while, ma while(det(M)>0)
       //RNU: puo' essere benissimo supportato.
       // if (OutArg.Dimension > 0)
-      //    SCI2CerrorFile('Cannot manage while with matrix conditions',ReportFileName);
+      //    PrintStringInfo('Cannot manage while with matrix conditions',ReportFileName,'file','y');
+      //    error(9999, 'Cannot manage while with matrix conditions');
       //    SharedInfo.SkipNextFun = 0; //NUT verifica se serve
       // end
    // #RNU_RES_E

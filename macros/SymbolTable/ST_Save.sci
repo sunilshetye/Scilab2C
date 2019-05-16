@@ -24,7 +24,7 @@ SCI2CNInArgCheck(argn(2),2,2);
 
 [tmpnams,tmptyps,tmpdims,tmpvols]=listvarinfile(SymbolTableFileName);
 if (max(size(tmpnams)) > 1)
-    SCI2Cerror('More than one variable found in ""'+SymbolTableFileName+'"".');
+    error(9999, 'More than one variable found in ""'+SymbolTableFileName+'"".');
 end
 
 // Identifies the Table name and save it into the .dat file.
@@ -38,7 +38,7 @@ elseif (mtlb_strcmp(tmpnams,'TempVars'))
    TempVars = SCI2CSymbolTable;
    save(SymbolTableFileName, "TempVars");
 else
-   SCI2Cerror('Unknow table: ""'+tmpnams+'"".');
+   error(9999, 'Unknown table: ""'+tmpnams+'"".');
 end
 
 endfunction

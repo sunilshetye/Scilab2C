@@ -211,7 +211,7 @@ else
    // --- Case 5. ---
    // ---------------
 
-   SCI2Cerror('Could not manage the for expression.');
+   error(9999, 'Could not manage the for expression.');
 end
 
 endfunction

@@ -32,7 +32,7 @@ if (size(allfiles,1) == 0)
 elseif (size(allfiles,1) == 1)
    ExistTest = %T;
 else
-   SCI2Cerror('Very Strange! Found more than one file with the same name.');
+   error(9999, 'Very Strange! Found more than one file with the same name.');
 end
 
 endfunction
