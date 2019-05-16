@@ -67,7 +67,7 @@ STACKDEDUG = 0; // 1 -> Every Pop and Push operation on the stack, the stack con
 global disp_isthere
 disp_isthere = 0;
 
-clear FName
+FName = null
 // -------------------------------------
 // --- End parameter Initialization. ---
 // -------------------------------------
@@ -174,7 +174,7 @@ while ~meof(fidAST)
 		end
 	 end
 	 disp_isthere = 0;
-         clear FName
+         FName = null
       case 'Equal' then
          SharedInfo.Equal.Enabled = 1; // 1 means enabled -> we are inside an equal AST block.
          AST_PushASTStack(treeline);
